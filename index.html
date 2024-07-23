@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quiz App</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="home_content">
+                <h1>Quiz Application</h1>
+                <P>This is a quiz application built using Javascript, HTML ans CSS. It consists of programming
+                    related questions. Try to answer the following code-related questions within the time limit.</P>
+                <button class="start-btn">Start Quiz</button>
+            </div>
+            
+            <!-- info box-->
+            <div class="info_box">
+                <div class="info-title"><span>Rules of the quiz</span></div>
+                <div class="info-list">
+                    <div class="info">1. You will have only <span>10 seconds</span> per question.</div>
+                    <div class="info">2.Once you select your answer you can't reselect.</div>
+                    <div class="info">3. You can't select any option once time goes off.</div>
+                    <div class="info">4. You can'texit the quiz while you're playing.</div>
+                    <div class="info">5. You'll get points on thebasis of your correct answers.</div>
+                </div>    
+                <div class="buttons">
+                    <button class="quit">Exit Quiz</button>
+                    <button class="restart">Continue</button>
+                </div>
+            </div>
+            
+            <!--quiz box-->
+            <div class="quiz_box">
+                <header>
+                    <div class="title">My Quiz Application</div>
+                    <div class="timer">
+                        <div class="time_left_txt">Time Left</div>
+                        <div class="timer_sec">10</div>
+                    </div>
+                    <div class="time_line"></div>
+                </header>
+                <section>
+                    <div class="que_text">
+                        <!--<span>What does HTML stand for?</span>-->
+                    </div>
+                    <div class="option_list">
+                       <!--- <div class="option">
+                            <span>Hyper Text Preprocessor</span>
+                            <div class="icon tick"><i class='bx bx-check' ></i></div>
+                        </div>
+                        <div class="option">
+                            <span>Hyper Text Markup Language</span>
+                            <div class="icon cross"><i class='bx bx-x'></i></div>
+                        </div>
+                        <div class="option">
+                            <span>Hyper Text Multiple Language</span>                            
+                        </div>
+                        <div class="option">
+                            <span>Hyper Tool Multi Language</span>
+                        </div>-->
+
+                    </div>
+                </section>
+
+
+                <footer>
+                    <div class="total_que">
+                        <!--<span><p>2</p>Of<p>5</p>Questions</span>-->
+                    </div>
+                    <button class="next_btn">Next Question</button>
+                </footer>
+            </div>
+
+            <!--results box-->
+            <div class="result_box">
+                <h2>Quiz Results</h2>
+                <div class="percentage-container">
+                    <div class="circular-progress">
+                        <span class="progress-value">0%</span>
+                    </div>
+
+                    <span class="score-text">Your Score 0 out of 5</span>
+                </div>
+
+                <div class="buttons">
+                    <button class="tryAgain-btn">Try Again</button>
+                    <button class="quitQuiz-btn">Quit quiz</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="questions.js"></script>
+        <script src="index.js"></script>
+        
+    </body>
+</html>
